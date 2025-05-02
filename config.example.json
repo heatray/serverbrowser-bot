@@ -1,0 +1,15 @@
+{
+  "discordToken": "XXX",
+  "channels": {
+    "622":       "1289924236156342304", // Worms 3D - Amateur League
+    "524":       "1289924329425080401", // Worms 3D - Elite League
+    "523":       "1289924286152179752", // Worms 3D - Professional League
+    "519":       "1289924153989795861", // Worms 3D - Team17
+    "623":       "1289924071425052682", // Worms 3D - Shopping
+    "517":       "1289924007172243488", // Worms 3D - Anything Goes
+    "755":       "1289924387386167296", // Worms Forts - Beginners
+    "756":       "1289924436719570984", // Worms Forts - Intermediate
+    "1173":      "1289924865607995412", // Worms Forts - Advanced
+    "undefined": "1289924911724494969"  // Worms 4 Mayhem
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "serverbrowser-bot",
+  "version": "1.0.0",
+  "description": "W4Tweaks OpenSpy Server Browser Discord bot",
+  "homepage": "https://github.com/heatray/serverbrowser-bot#readme",
+  "bugs": {
+    "url": "https://github.com/heatray/serverbrowser-bot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heatray/serverbrowser-bot.git"
+  },
+  "license": "MIT",
+  "author": "heatray",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "strip-json-comments": "^5.0.1",
+    "uuid": "^11.1.0"
+  }
+}

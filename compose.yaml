@@ -1,0 +1,8 @@
+services:
+  discord-serverbrowser:
+    container_name: discord-serverbrowser
+    build: .
+    restart: always
+    volumes:
+      - ./config.json:/app/config.json
+      # - ./data:/app/data
