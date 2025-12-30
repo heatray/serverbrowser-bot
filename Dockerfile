@@ -1,6 +1,7 @@
 FROM node:lts-alpine AS gslist
-ADD https://aluigi.altervista.org/papers/gslist.zip .
-RUN apk add --no-cache build-base geoip-dev zlib-dev zlib-static unzip; \
+ADD gslist.zip .
+RUN apk add --no-cache \
+        build-base geoip-dev geoip-static zlib-dev zlib-static unzip; \
     unzip gslist.zip src/*; \
     sed -i 's|\.gamespy\.com|.openspy.net|' src/*.c src/*.h; \
     gcc \
