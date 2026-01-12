@@ -122,9 +122,10 @@ export default class ServerBrowserW4 {
     let s = server;
 
     let embed = new EmbedBuilder()
-      .setColor('#3498DB')
+      .setColor(s.portcheck ? '#2ECC71' : '#E74C3C')
       .setAuthor({ name: `[${s.type}] ${s.mapLabel}` })
       .setTitle(`${s.password ? ':lock: ' : ''}${s.name} (${s.numPlayers}/${s.maxPlayers})`)
+      .setDescription(`:${s.portcheck ? 'white_check_mark' : 'no_entry'}: Port ${this.hostport} is ${s.portcheck ? 'open' : 'closed'} on ${s.ip}`)
       .setFooter({ text: String(s.id) })
       .setTimestamp(s.date);
     if (this.getMapImage(s.map)) {
@@ -155,11 +156,7 @@ export default class ServerBrowserW4 {
       embed.addFields({ name: f.name, value: f.value, inline: true });
     }
 
-    let embed2 = new EmbedBuilder()
-      .setColor(s.portcheck ? '#2ECC71' : '#E74C3C')
-      .setDescription(`Port ${this.hostport} is ${s.portcheck ? 'open' : 'closed'} on ${s.ip}`);
-
-    return [embed, embed2];
+    return [embed];
   }
 
   getMapLabel(id) {
