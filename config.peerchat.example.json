@@ -1,0 +1,35 @@
+[
+  {
+    "nickname": "W4TweaksBridgeBot",
+    "server": "peerchat.openspy.net",
+    "discordToken": "XXX",
+    "channelMapping": {
+      "1289924236156342304": "#GPG!622",   // Worms 3D - Amateur League
+      "1289924329425080401": "#GPG!524",   // Worms 3D - Elite League
+      "1289924286152179752": "#GPG!523",   // Worms 3D - Professional League
+      "1289924153989795861": "#GPG!519",   // Worms 3D - Team17
+      "1289924071425052682": "#GPG!623",   // Worms 3D - Shopping
+      "1289924007172243488": "#GPG!517",   // Worms 3D - Anything Goes
+      "1289924387386167296": "#GPG!755",   // Worms Forts - Beginners
+      "1289924436719570984": "#GPG!756",   // Worms Forts - Intermediate
+      "1289924865607995412": "#GPG!1173",  // Worms Forts - Advanced
+      "1289924911724494969": "#GSP!worms4" // Worms 4 Mayhem
+    },
+    "ircOptions": {
+      "floodProtection": false,
+      "port": "6667",
+      "secure": false,
+      "sasl": false,
+      "retryCount": null,
+      "retryDelay": 120000
+    },
+    "format": {
+      "commandPrelude": "Command sent by {$nickname}",
+      "ircText": "<{$displayUsername}> {$text}",
+      "urlAttachment": "<{$displayUsername}> {$attachmentURL}",
+      "discord": "**<{$author}>** {$withMentions}"
+    },
+    "ircNickColor": true,
+    "ircStatusNotices": true
+  }
+]

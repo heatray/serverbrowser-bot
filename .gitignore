@@ -1,4 +1,5 @@
-/config.json
+/config.serverbrowser.json
+/config.peerchat.json
 
 # Logs
 logs

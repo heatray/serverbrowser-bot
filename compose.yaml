@@ -1,9 +1,17 @@
 services:
-  discord-serverbrowser:
+  serverbrowser:
     container_name: discord-serverbrowser
     build: .
     restart: unless-stopped
-    volumes:
-      - ./config.json:/app/config.json
-      # - ./data:/app/data
     network_mode: bridge
+    volumes:
+      - ./config.serverbrowser.json:/app/config.json
+      # - ./data:/app/data
+
+  peerchat:
+    container_name: discord-peerchat
+    image: discordirc/discord-irc
+    restart: unless-stopped
+    network_mode: bridge
+    volumes:
+      - ./config.peerchat.json:/config/config.json
